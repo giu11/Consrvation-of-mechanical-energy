@@ -42,7 +42,7 @@ if(digitalRead(8) == LOW)
  
 lcd.clear();
 a = millis();
-while(digitalRead(9) == HIGH && cm > 8 && cm < 15)
+while(digitalRead(9) == HIGH && cm > 0 && cm < 10)
 {
  
 c = millis();
@@ -60,7 +60,7 @@ delay(100);
  
 if(digitalRead(9) == LOW)
 {
-while(digitalRead(8) == HIGH && cm2 > 3 && cm2 < 6)
+while(digitalRead(8) == HIGH && cm2 > 0 && cm2 < 10)
 {
 lcd.setCursor(0,0);
 lcd.print(i);
